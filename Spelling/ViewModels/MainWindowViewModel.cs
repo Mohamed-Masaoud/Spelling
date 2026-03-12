@@ -11,8 +11,10 @@ namespace Spelling.ViewModels
         public MainWindowViewModel()
         {
             DictionaryVM = new DictionaryViewModel();
+            SpellingVM = new SpellingViewModel();
         }
 
-        public DictionaryViewModel DictionaryVM { get; set; }
+        public DictionaryViewModel DictionaryVM { get; }
+        public SpellingViewModel SpellingVM { get; } 
     }
 }

@@ -1,7 +1,9 @@
 ﻿using Spelling.Dictionary.DTOs;
+using Spelling.Properties;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -16,7 +18,7 @@ namespace Spelling.Dictionary
 
         public IFreeDictionaryAPIImplementation()
         {
-            _url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
+            _url = Properties.Settings.Default.FreeDictionaryApiUrl;
         }
         public async Task<List<WordDefinitions>> GetWordDefinitionsAsync(string word)
         {
