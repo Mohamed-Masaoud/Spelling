@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Icon.ico" />
     <Content Include="Resources\sentences.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
